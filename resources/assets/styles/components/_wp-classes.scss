@@ -1,0 +1,51 @@
+//stylelint-disable
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+/** Media alignment */
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: (30px / 2) auto;
+  height: auto;
+}
+
+.alignleft,
+.alignright {
+  margin-bottom: (30px / 2);
+  height: auto;
+}
+
+@include mobile {
+  .alignleft {
+    float: left;
+    margin-right: (30px / 2);
+  }
+
+  .alignright {
+    float: right;
+    margin-left: (30px / 2);
+  }
+}
+
+/** Captions */
+.wp-caption {
+}
+
+.wp-caption img {
+}
+
+.wp-caption-text {
+}
+
+/** Text meant only for screen readers */
+.screen-reader-text {
+}
