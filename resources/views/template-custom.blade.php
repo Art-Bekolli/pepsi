@@ -1,2 +1,12 @@
-<?php if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
-@php echo "cum" @endphp
+{{--
+  Template Name: Custom Template
+--}}
+
+@extends('layouts.app')
+
+@section('content')
+  @while(have_posts()) @php the_post() @endphp
+    @include('partials.page-header')
+    @include('partials.content-page')
+  @endwhile
+@endsection
