@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/app/themes/sage",
-  "devUrl": "http://example.test",
+  "devUrl": "http://pepsi.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[contenthash]",
   "watch": [
