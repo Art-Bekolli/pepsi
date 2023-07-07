@@ -277,3 +277,15 @@ function send_notification( $post_id ) {
         $message  = "Kuponi juaj: ".$post_title." eshte hyrur ne loje.";
         wp_mail(get_post_meta($post_id, 'email_custom_field'), $subject, $message );  
 }
+
+function my_wp_trash_post( $post_id ) {
+
+    $post     = get_post($post_id);
+        //$post_url = get_permalink( $post_id );
+        $post_title = get_the_title( $post_id ); 
+        $author   = get_userdata($post->post_author);
+        $subject  = 'Hyrja nuk ju pranua.';
+        $message  = "Ju kerkojme falje, por hyrja juaj me numrin: ".$post_title." nuk eshte hyrur ne loje.";
+        wp_mail(get_post_meta($post_id, 'email_custom_field'), $subject, $message );  
+}
+add_action( 'wp_trash_post', 'my_wp_trash_post' );
