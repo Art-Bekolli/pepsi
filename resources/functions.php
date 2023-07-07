@@ -135,6 +135,7 @@ function wporg_options_page_html() {
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 			    echo '<div class="random">';
 			    the_title();
+				echo "<br>" . get_post_meta(get_the_ID(), 'email_custom_field')[0];
 				echo "<br><img src= '" .  get_the_post_thumbnail_url(get_the_ID()) . "' >";
 			    echo '</div>';
 			endwhile;
