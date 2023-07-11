@@ -1,0 +1,153 @@
+/* eslint-disable */
+
+.section{
+    &_hero{
+        background-color: #005CB4;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        .container{
+            display: flex;
+            .left{
+                font-weight: 500;
+                color: white;
+                @include rem(font-size, 100px);
+                @include rem(margin-top, 319px);
+                @include rem(line-height, 132.9px);
+            }
+            .right{
+                @include rem(margin-top, 228px);
+                img{
+                    @include rem(max-width, 776px);
+                }
+            }
+        }
+    }
+    &_date{
+        .container{
+        font-weight: 500; 
+        color: #004B93;
+        @include rem(font-size, 36px);
+        @include rem(line-height, 47px);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        @include rem(gap, 54px);
+        align-items: center;
+        @include rem(padding, 204px 0);
+        p{
+            @include rem(max-width, 731px);
+        }
+        }
+    }
+    &_hapat{
+        .container{
+            counter-reset: hapi;
+            display: flex;
+            flex-direction: column;
+            @include rem(gap, 57px);
+            .hapi{
+                display: flex;
+                color: #004B93;
+                @include rem(gap, 26px);
+                align-items: center;
+                .hap{
+                    font-weight: 500;
+                    @include rem(font-size, 40px);
+                }
+                .count{
+                    border: 2px solid #004B93;
+                    @include rem(border-radius, 100px);
+                    @include rem(padding, 15px 30px);
+                    &::after{
+                        counter-increment: hapi;
+                        content: counter(hapi);
+                        @include rem(line-height, 62.46px);
+                        font-weight: 700;
+                        @include rem(font-size, 47px);
+                    }
+                }
+            }
+        }
+    }
+    &_form{
+        @include rem(padding, 200px 0);
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include rem(gap, 75px);
+                input{width: 100% !important;}
+                .usp-images{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    @include rem(gap, 15px);
+                    #usp-upload-message{
+                        order: 2;
+                        display: flex;
+                        align-items: center;
+                        color: #004B93;
+                        font-size: 1.625rem !important;
+                    }
+                }
+                fieldset{
+                    
+                label{
+                    display: none !important;
+                }
+                .containertitle{
+                    label{
+                        display: block !important;
+                        order: 1;
+                        font-weight: 500;
+                        text-align: center;
+                        font-size: 2rem !important;
+                        width: 15.125rem !important;
+                        line-height: 42px;
+                        color: #8D8D8D;
+                        width: 100% !important; 
+                        padding: 0.625rem 0 !important;
+                        background: #D9D9D9;
+                        border-radius: 0.9375rem !important;
+                    }
+                    }
+                }
+            }
+            }
+            
+            input[type=text]{
+                border: 2px solid #005CB4;
+                @include rem(border-radius, 25px);
+                @include rem(font-size, 36px);
+                @include rem(max-width, 560px);
+                @include rem(padding, 24px 0);
+                background-color: #D9D9D9;
+                text-align: center;
+                &::placeholder{
+                    text-align: center;
+                    color: #8D8D8D;
+                }
+                
+            }
+            #usp-submit{
+                width: 35rem !important;
+                display: flex;
+                justify-content: center;
+            }
+            .usp-submit{
+                background-color: #004B93;
+                color: white;
+                @include rem(border-radius, 25px);
+                border: none;
+                @include rem(font-size, 36px);
+                @include rem(line-height, 47px);
+                @include rem(padding, 25px 0);
+            }
+            input[type=file]{
+                display: none !important;
+            }
+        }
+    }
+

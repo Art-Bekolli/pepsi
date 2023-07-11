@@ -1,0 +1,7 @@
+.container{
+    @include rem(max-width, 1210px);
+    margin: auto;
+}
+*{
+    font-family: 'Futura';
+}
