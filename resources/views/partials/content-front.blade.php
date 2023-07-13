@@ -20,15 +20,15 @@
     
                 <div class="hapi hapi1">
                     <div class="count"></div>
-                    <div class="hap">@field('hapi_1')</div>
+                    <div class="hap">@field('hapi1')</div>
                 </div>
                 <div class="hapi hapi2">
                     <div class="count"></div>
-                    <div class="hap">@field('hapi_2')</div>
+                    <div class="hap">@field('hapi2')</div>
                 </div>
                 <div class="hapi hapi3">
                     <div class="count"></div>
-                    <div class="hap">@field('hapi_3')</div>
+                    <div class="hap">@field('hapi3')</div>
                 </div>
     
         </div>
