@@ -130,12 +130,14 @@ function wporg_options_page_html() {
 			// output save settings button
 
 						//Create WordPress Query with 'orderby' set to 'rand' (Random)
-			$the_query = new WP_Query( array ( 'orderby' => 'rand', 'posts_per_page' => '1' ) );
+			$the_query = new WP_Query( array ( 'orderby' => 'rand', 'post_status' => array('publish'), 'posts_per_page' => '1' ) );
 			// output the random post
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 			    echo '<div class="random">';
-			    the_title();
-				echo "<br>" . get_post_meta(get_the_ID(), 'email_custom_field')[0];
+			    echo 'Numri i Kuponit Fiskal: '.get_the_title();		
+				echo "<br>Emri dhe Mbiemri: " . get_post_meta(get_the_ID(), 'user_submit_name')[0];
+				echo "<br>Numri i Telefonit: " . get_post_meta(get_the_ID(), 'num_custom_field')[0];
+				echo "<br>Email: " . get_post_meta(get_the_ID(), 'email_custom_field')[0];
 				echo "<br><img src= '" .  get_the_post_thumbnail_url(get_the_ID()) . "' >";
 			    echo '</div>';
 			endwhile;
