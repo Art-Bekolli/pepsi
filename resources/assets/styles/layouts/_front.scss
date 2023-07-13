@@ -7,7 +7,8 @@
         .container{
             display: flex;
             .left{
-                font-weight: 500;
+                font-weight: 700;
+                font-family: 'Futura';
                 color: white;
                 @include rem(font-size, 100px);
                 @include rem(margin-top, 319px);
@@ -23,6 +24,7 @@
     }
     &_date{
         .container{
+            font-family: 'Futura Bk';
         font-weight: 500; 
         color: #004B93;
         @include rem(font-size, 36px);
@@ -40,6 +42,7 @@
     }
     &_hapat{
         .container{
+            font-family: 'Futura Bk';
             counter-reset: hapi;
             display: flex;
             flex-direction: column;
@@ -58,6 +61,7 @@
                     @include rem(border-radius, 100px);
                     @include rem(padding, 15px 30px);
                     &::after{
+                        font-family: 'Futura';
                         counter-increment: hapi;
                         content: counter(hapi);
                         @include rem(line-height, 62.46px);
@@ -90,10 +94,13 @@
                         align-items: center;
                         color: #004B93;
                         font-size: 1.625rem !important;
+                        font-family: 'Futura Bk';
+                    font-weight: 600;
                     }
                 }
                 fieldset{
-                    
+                    max-width: 35rem;
+                    width: 100%;
                 label{
                     display: none !important;
                 }
@@ -101,7 +108,8 @@
                     label{
                         display: block !important;
                         order: 1;
-                        font-weight: 500;
+                        font-family: 'Futura Bk';
+                        font-weight: 600;
                         text-align: center;
                         font-size: 2rem !important;
                         width: 15.125rem !important;
@@ -125,9 +133,14 @@
                 @include rem(padding, 24px 0);
                 background-color: #D9D9D9;
                 text-align: center;
+                font-family: 'Futura Bk';
+                font-weight: 600;
+                @include rem(width, 560px);
                 &::placeholder{
                     text-align: center;
                     color: #8D8D8D;
+                    font-family: 'Futura Bk';
+                    font-weight: 600;
                 }
                 
             }
