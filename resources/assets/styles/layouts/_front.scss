@@ -33,6 +33,11 @@
             position:absolute;
             z-index:-1;
         }
+        .mobile_img {
+            position:absolute;
+            z-index:-1;
+            display:none;
+        }
     }
     &_date{
         .container{

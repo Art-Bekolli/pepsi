@@ -2,6 +2,7 @@
 
     <div class="container">
     <img class="desktop_img" src="@field('banner_img')">
+    <img class="mobile_img" src="">
     <div class="left">@field('hero_text')</div>
     <!--<div class="right"><img src="@field('banner_img')" alt=""></div>-->
     
