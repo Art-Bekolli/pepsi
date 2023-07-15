@@ -1,7 +1,7 @@
 export default {
   init() {
     $(".usp-name input").attr("placeholder", "Emri dhe Mbiemri");
-    $(".usp-title input").attr("placeholder", "Numri i Kuponit Fiskal");
+    $(".usp-title input").attr("placeholder", "Qyteti");
     $(".usp-custom input").attr("placeholder", "Email");
     $("#usp-upload-message").html("Foto e kuponit fiskal");
     $(".usp-input").text('');
