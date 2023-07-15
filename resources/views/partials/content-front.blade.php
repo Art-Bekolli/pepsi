@@ -1,9 +1,9 @@
 <section class="section section_hero">
 
     <div class="container">
-    
+    <img class="desktop_img" src="@field('banner_img')">
     <div class="left">@field('hero_text')</div>
-    <div class="right"><img src="@field('hero_img')" alt=""></div>
+    <!--<div class="right"><img src="@field('banner_img')" alt=""></div>-->
     
     </div>
     

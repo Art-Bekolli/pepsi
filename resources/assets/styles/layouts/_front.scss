@@ -1,17 +1,25 @@
 /* eslint-disable */
-
+.body {
+    overflow: hidden;
+}
 .section{
     &_hero{
-        background-color: #005CB4;
-        box-shadow: 0px 4px 4px 0px #00000040;
+        /*background-color: #005CB4;
+        box-shadow: 0px 4px 4px 0px #00000040;*/
         .container{
             display: flex;
+            max-width:100%;
             .left{
                 font-weight: 700;
                 font-family: 'Futura';
                 color: white;
+                margin:auto;
+                margin-top:25vw;
+                margin-bottom:21.5vw;
                 @include rem(font-size, 100px);
-                @include rem(margin-top, 319px);
+                //@include rem(margin-top, 319px);
+                //@include rem(margin-top, 500px);
+                //@include rem(margin-bottom, 350px);
                 @include rem(line-height, 132.9px);
             }
             .right{
@@ -20,6 +28,10 @@
                     @include rem(max-width, 776px);
                 }
             }
+        }
+        .desktop_img {
+            position:absolute;
+            z-index:-1;
         }
     }
     &_date{
