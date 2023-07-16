@@ -163,7 +163,9 @@
                         font-family: 'Futura Bk';
                         font-weight: 600;
                         text-align: center;
+                        @include desktop{
                         font-size: 2rem !important;
+                        }
                         width: 15.125rem !important;
                         line-height: 42px;
                         color: #8D8D8D;
