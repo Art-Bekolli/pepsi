@@ -216,6 +216,9 @@
                 @include rem(font-size, 36px);
                 @include rem(line-height, 47px);
                 @include rem(padding, 25px 0);
+                @include mobile{
+                    font-size: 1.25 rem;
+                }
             }
             input[type=file]{
                 display: none !important;
