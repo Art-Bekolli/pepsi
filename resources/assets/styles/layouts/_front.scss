@@ -31,7 +31,9 @@
         }
         .desktop_img {
             position:absolute;
+            
             z-index:-1;
+            
         }
         .mobile_img {
             position:absolute;
@@ -96,8 +98,10 @@
             position: absolute;
             left: 0;
             top: 0;
-            width: 100%;
-            height: 100%;
+            width: 100%;  
+            @media only screen and (max-width: 1500px) {
+                height: 100%;
+            }
             object-fit: cover;
             @include mobile{
                 display: none;
