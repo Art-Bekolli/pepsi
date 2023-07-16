@@ -171,6 +171,9 @@
                         padding: 0.625rem 0 !important;
                         background: #D9D9D9;
                         border-radius: 0.9375rem !important;
+                        @include mobile{
+                            font-size: 1.25 rem !important;
+                        }
                     }
                     }
                 }
@@ -216,9 +219,7 @@
                 @include rem(font-size, 36px);
                 @include rem(line-height, 47px);
                 @include rem(padding, 25px 0);
-                @include mobile{
-                    font-size: 1.25 rem;
-                }
+                
             }
             input[type=file]{
                 display: none !important;
