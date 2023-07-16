@@ -1,10 +1,10 @@
-<section class="section section_hero">
+<!-- <section class="section section_hero">
 
     <div class="container">
     <img class="desktop_img" src="@field('banner_img')">
     <img class="mobile_img" src="@field('banner_img_mobile')">
     <div class="left">@field('hero_text')</div>
-    <!--<div class="right"><img src="@field('banner_img')" alt=""></div>-->
+ <div class="right"><img src="@field('banner_img')" alt=""></div>
     
     </div>
     
@@ -34,10 +34,12 @@
     
         </div>
     </section>
+-->
     <section class="section section_form">
-    
+        <img class="desktop_img" src="@field('hero_img')">
+        <img class="mobile_img" src="@field('hero_img_mobile')">
     <div class="container">
-    
+        
         <?php if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
         <label style="display: none;" for="user-submitted-image[]">Click me to upload image</label>
     
