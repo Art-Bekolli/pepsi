@@ -126,8 +126,9 @@
                 @include rem(padding, 60px 0);
                 background-color: rgba(100,100,255,0.7);
                 @include mobile{
-                    @include rem(padding-left, 20px);
-                    @include rem(padding-right, 20px);
+                    padding-left: 1.25rem !important;
+                    padding-right: 1.25rem !important;
+                    margin: 0 10px !important;
                 }
                 display: flex;
                 flex-direction: column;
@@ -193,10 +194,14 @@
                     font-family: 'Futura Bk';
                     font-weight: 600;
                 }
+                @include mobile{
+                    font-size: 1.25rem;
+                    padding: 1rem;
+                }
                 
             }
             #usp-submit{
-                width: 35rem !important;
+                width: 100%;
                 display: flex;
                 justify-content: center;
             }
