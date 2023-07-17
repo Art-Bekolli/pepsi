@@ -31,7 +31,9 @@
         }
         .desktop_img {
             position:absolute;
+            
             z-index:-1;
+            
         }
         .mobile_img {
             position:absolute;
@@ -96,8 +98,10 @@
             position: absolute;
             left: 0;
             top: 0;
-            width: 100%;
-            height: 100%;
+            width: 100%;  
+            @media only screen and (max-width: 1500px) {
+                height: 100%;
+            }
             object-fit: cover;
             @include mobile{
                 display: none;
@@ -109,7 +113,9 @@
             left: 0;
             top: 0;
             width: 100%;
-            height: 100%;
+            @media only screen and (max-width: 450px) {
+                //height: 100%;
+            }
             object-fit: cover;
             @include mobile{
                 display: block;
@@ -122,6 +128,13 @@
             position: relative;
             justify-content: center;
             height: 100%;
+            padding-top:4.5vw;
+            @media only screen and (max-width: 450px) {
+                //padding-top:70px;
+            }
+            @include mobile{
+                padding-top:70px;
+            }
             form{
                 @include rem(padding, 60px 0);
                 background-color: rgba(100,100,255,0.7);
