@@ -8,6 +8,7 @@ export default {
     $('input[type="file"]' ).wrap( '<div  class="containertitle"></div>' );
     $('.containertitle').html('<input name="user-submitted-image[]" id="files" type="file" size="25" class="usp-input usp-clone" data-parsley-excluded="true" accept="image/*"><label for="files">Ngarko</label>');
     $(".usp-submit").val('Bëhu pjesë e lojës');
+    $('input[type="file"]').attr("required", "true");
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
