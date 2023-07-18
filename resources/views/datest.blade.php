@@ -24,7 +24,7 @@
         //wp_mail('robertbpira@gmail.com', $subject, $message );  
 @endphp
 
-<form action="<?php echo get_stylesheet_directory_uri() ?>/process_upload.php" method="post" enctype="multipart/form-data">
+<form action="<?php echo get_stylesheet_directory_uri() ?>/views/imageupload.php" method="post" enctype="multipart/form-data">
 	Your Photo: <input type="file" name="profile_picture" />
 	<input type="submit" name="submit" value="Submit" />
 </form>
