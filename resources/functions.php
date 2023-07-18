@@ -272,14 +272,14 @@ function fix_post_id_on_preview($null, $post_id)
 add_filter('acf/pre_load_post_id', 'fix_post_id_on_preview', 10, 2);
 
 
-add_action( 'publish_post', 'send_notification' );
+ // add_action( 'publish_post', 'send_notification' );
 function send_notification( $post_id ) {    
         $post     = get_post($post_id);
         //$post_url = get_permalink( $post_id );
         $post_title = get_the_title( $post_id ); 
         $author   = get_userdata($post->post_author);
-        $subject  = 'Urime, keni hyr ne loje shperblyese!';
-        $message  = "Kuponi juaj: ".$post_title." eshte hyrur ne loje.";
+        $subject  = 'Urime, keni hyre ne loje shperblyese!';
+        $message  = "Kuponi juaj: ".$post_title." Ka hyre ne loje.";
         wp_mail(get_post_meta($post_id, 'email_custom_field'), $subject, $message );  
 }
 
@@ -290,10 +290,10 @@ function my_wp_trash_post( $post_id ) {
         $post_title = get_the_title( $post_id ); 
         $author   = get_userdata($post->post_author);
         $subject  = 'Hyrja nuk ju pranua.';
-        $message  = "Ju kerkojme falje, por hyrja juaj me numrin: ".$post_title." nuk eshte hyrur ne loje.";
+        $message  = "Ju kerkojme falje, por hyrja juaj me numrin: ".$post_title." nuk eshte pranuar ne loje.";
         wp_mail(get_post_meta($post_id, 'email_custom_field'), $subject, $message );  
 }
-add_action( 'wp_trash_post', 'my_wp_trash_post' );
+// add_action( 'wp_trash_post', 'my_wp_trash_post' );
 
 function uploadimaeg($image_url)
 		{ // upload foto ne server, dhe kthe id te fotos

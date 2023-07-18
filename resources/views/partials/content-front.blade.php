@@ -35,7 +35,7 @@
         add_post_meta($postId, "num_custom_field", $_POST['numriitelefonit'],true);
         add_post_meta($postId, "user_submit_name", $_POST['qyteti'],true);
         
-
+        echo "Sukses! Informatat jane derguar dhe do te kontrollohen nga ne.";
        }
     }
 
