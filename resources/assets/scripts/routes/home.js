@@ -6,7 +6,7 @@ export default {
     $("#usp-upload-message").html("Foto e kuponit fiskal");
     $(".usp-input").text('');
     $('input[type="file"]' ).wrap( '<div  class="containertitle"></div>' );
-    $('.containertitle').html('<input name="user-submitted-image[]" id="files" type="file" size="25" class="usp-input usp-clone" data-parsley-excluded="true" accept="image/jpeg,image/png" required><label for="files">Ngarko</label>');
+    $('.containertitle').html('<input name="user-submitted-image[]" id="files" type="file" size="25" class="usp-input usp-clone" data-parsley-excluded="true" accept="image/jpeg,image/png" required><label for="files">Ngarko</label><br>');
     $(".usp-submit").val('Bëhu pjesë e lojës');
     $('input[type="file"]').attr("required", "true");
   },
