@@ -140,7 +140,7 @@ require_once( ABSPATH . 'wp-admin/includes/admin.php' );
             </fieldset>
             <fieldset class="usp-images">
                 <div id="user-submitted-image">
-              <input type="file" name="file" id="file">
+              <input type="file" name="file" id="file" accept="image/jpeg, image/png, image/jpg">
               <label for="file">Ngarko</label>
             </div>
             <div id="usp-upload-message">Foto e kuponit fiskal</div>
