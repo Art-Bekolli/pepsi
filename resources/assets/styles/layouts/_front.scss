@@ -228,7 +228,7 @@
                 border: none;
                 @include rem(font-size, 36px);
                 @include rem(line-height, 47px);
-                @include rem(padding, 25px 0);
+                @include rem(padding, 25px 25px);
                 max-width: 35rem;
                 @include mobile{
                     width: 100% ;
