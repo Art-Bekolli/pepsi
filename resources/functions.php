@@ -9,6 +9,9 @@
 /**
  * custom option and settings
  */
+
+
+
 function wporg_settings_init() {
 	// Register a new setting for "wporg" page.
 	register_setting( 'wporg', 'wporg_options' );

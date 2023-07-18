@@ -138,6 +138,8 @@
             form{
                 @include rem(padding, 60px 0);
                 background-color: rgba(100,100,255,0.7);
+                width: 100%;
+                @include rem(max-width, 800px);
                 @include mobile{
                     padding-left: 1.25rem !important;
                     padding-right: 1.25rem !important;
@@ -166,10 +168,7 @@
                 fieldset{
                     max-width: 35rem;
                     width: 100%;
-                label{
-                    display: none !important;
-                }
-                .containertitle{
+                
                     label{
                         display: block !important;
                         order: 1;
@@ -179,7 +178,7 @@
                         @include desktop{
                         font-size: 2rem !important;
                         }
-                        width: 15.125rem !important;
+                        max-width: 15.125rem !important;
                         line-height: 42px;
                         color: #8D8D8D;
                         width: 100% !important; 
@@ -190,7 +189,7 @@
                             font-size: 1.25 rem !important;
                         }
                     }
-                    }
+                    
                 }
             }
             }
@@ -219,14 +218,9 @@
                 
             }
             #usp-submit{
-                width: 35rem !important;
-                @include mobile{
-                    width: 100% !important;
-                }
-                display: flex;
-                justify-content: center;
+                
             }
-            .usp-submit{
+            .field-submit{
                 background-color: #004B93;
                 color: white;
                 @include rem(border-radius, 25px);
@@ -234,10 +228,15 @@
                 @include rem(font-size, 36px);
                 @include rem(line-height, 47px);
                 @include rem(padding, 25px 0);
-                
+                max-width: 35rem !important;
+                @include mobile{
+                    width: 100% !important;
+                }
+                display: flex;
+                justify-content: center;
             }
-            input[type=file]{
-                position: absolute;
+            #file{
+                display: none;
             }
         }
     }

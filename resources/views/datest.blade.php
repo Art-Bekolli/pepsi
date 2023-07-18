@@ -25,7 +25,9 @@
 @endphp
 <?php
 
-var_dump(get_post_meta(89, "name_custom_field"));
+var_dump(get_post_meta(58, "user_submit_name"));
+var_dump(get_post_meta(58, "num_custom_field"));
+var_dump(get_post_meta(58, "email_custom_field"));
     if(isset($_POST['upload']))
     {
       echo 'isset';
