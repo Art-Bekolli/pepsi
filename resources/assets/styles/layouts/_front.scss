@@ -129,11 +129,9 @@
             justify-content: center;
             height: 100%;
             padding-top:4.5vw;
-            @media only screen and (max-width: 450px) {
-                //padding-top:70px;
-            }
             @include mobile{
-                padding-top:70px;
+                @include rem(padding, 70px);
+                height: auto;
             }
             form{
                 @include rem(padding, 60px 0);
