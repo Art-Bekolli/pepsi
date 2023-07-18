@@ -19,5 +19,12 @@
         $author   = get_userdata($post->post_author);
         $subject  = 'Urime, keni hyr ne loje shperblyese!';
         $message  = "Kuponi juaj: ".$post_title." eshte hyrur ne loje.";
+
+
         //wp_mail('robertbpira@gmail.com', $subject, $message );  
 @endphp
+
+<form action="<?php echo get_stylesheet_directory_uri() ?>/process_upload.php" method="post" enctype="multipart/form-data">
+	Your Photo: <input type="file" name="profile_picture" />
+	<input type="submit" name="submit" value="Submit" />
+</form>
