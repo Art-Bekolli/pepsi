@@ -12,6 +12,15 @@
 
 
 
+
+ add_action( 'post_submitbox_misc_actions', 'custom_button' );
+
+function custom_button(){
+	echo "<br>Emri dhe Mbiemri: " . get_post_meta(get_the_ID(), 'user_submit_name')[0];
+	echo "<br>Numri i Telefonit: " . get_post_meta(get_the_ID(), 'num_custom_field')[0];
+	echo "<br>Email: " . get_post_meta(get_the_ID(), 'email_custom_field')[0];
+}
+
 function wporg_settings_init() {
 	// Register a new setting for "wporg" page.
 	register_setting( 'wporg', 'wporg_options' );
