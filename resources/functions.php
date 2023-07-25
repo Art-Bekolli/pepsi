@@ -204,7 +204,7 @@ function wporg_options_page_html() {
 			<?php $the_query = new WP_Query( array ( 'orderby' => 'rand', 'post_status' => array('publish'), 'posts_per_page' => '-1' ) );
 			// output the random post
 			while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                    {"label":"<?php echo get_post_meta(get_the_ID(), 'user_submit_name')[0]; ?>",  "value":<?php echo get_the_ID(); ?>,  "question":"Qyteti: <?php echo get_the_title();?> Email: <?php echo get_post_meta(get_the_ID(), 'email_custom_field')[0];?> Numri i telefonit: <?php echo get_post_meta(get_the_ID(), 'num_custom_field')[0]; ?>"}, // padding
+                    {"label":"<?php echo get_post_meta(get_the_ID(), 'user_submit_name')[0]; ?>",  "value":<?php echo get_the_ID(); ?>,  "question":"Qyteti: <?php echo get_the_title();?> \n Email: <?php echo get_post_meta(get_the_ID(), 'email_custom_field')[0];?> \n Numri i telefonit: <?php echo get_post_meta(get_the_ID(), 'num_custom_field')[0]; ?>"}, // padding
 					
 					<?php endwhile;
 
