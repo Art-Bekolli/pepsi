@@ -176,6 +176,7 @@ function wporg_options_page_html() {
         top:50%;
         -webkit-transform:translate(0,-50%);
                 transform:translate(0,-50%);
+				word-break: break-all;
     }
     </style>
     
