@@ -13,6 +13,8 @@
 
 
 
+
+
  add_action( 'post_submitbox_misc_actions', 'custom_button' );
 
 function custom_button(){
@@ -145,6 +147,44 @@ function wporg_options_page_html() {
 			$the_query = new WP_Query( array ( 'orderby' => 'rand', 'post_status' => array('publish'), 'posts_per_page' => '1' ) );
 			// output the random post
 			while ( $the_query->have_posts() ) : $the_query->the_post();
+			?>
+			<script>
+			function myfunction(){
+
+
+				var x = 1024; //min value
+				var y = 9999; // max value
+			
+				var deg = Math.floor(Math.random() * (x - y)) + y;
+			
+				document.getElementById('box').style.transform = "rotate("+deg+"deg)";
+			
+				var element = document.getElementById('mainbox');
+				element.classList.remove('animate');
+				setTimeout(function(){
+					element.classList.add('animate');
+				}, 5000); //5000 = 5 second
+			}
+			</script>
+				<div id="mainbox" class="mainbox">
+		<div id="box" class="box">
+			<div class="box1">
+				<span class="span1"><b>Iron Man</b></span>
+				<span class="span2"><b>7500</b></span>
+				<span class="span3"><b>Bat Man</b></span>
+				<span class="span4"><b>Joker</b></span>
+			</div>
+			<div class="box2">
+				<span class="span1"><b>Shoplifters</b></span>
+				<span class="span2"><b>Inception</b></span>
+				<span class="span3"><b>Deadpool</b></span>
+				<span class="span4"><b>Terminator</b></span>
+			</div>
+		</div>
+
+		<button class="spin" onclick="myfunction()">SPIN</button>
+	</div>
+			<?php
 			    echo '<div class="random">';
 			    echo 'Qyteti: '.get_the_title();		
 				echo "<br>Emri dhe Mbiemri: " . get_post_meta(get_the_ID(), 'user_submit_name')[0];
