@@ -167,18 +167,18 @@ function wporg_options_page_html() {
 			}
 			</script>
 				<div id="mainbox" class="mainbox">
-		<div id="box" class="box">
-			<div class="box1">
-				<span class="span1"><b>Iron Man</b></span>
-				<span class="span2"><b>7500</b></span>
-				<span class="span3"><b>Bat Man</b></span>
-				<span class="span4"><b>Joker</b></span>
+		<div id="boxx" class="boxx">
+			<div class="boxx1">
+				<span class="spann1 span"><b>Iron Man</b></span>
+				<span class="spann2 span"><b>7500</b></span>
+				<span class="spann3 span"><b>Bat Man</b></span>
+				<span class="spann4 span"><b>Joker</b></span>
 			</div>
-			<div class="box2">
-				<span class="span1"><b>Shoplifters</b></span>
-				<span class="span2"><b>Inception</b></span>
-				<span class="span3"><b>Deadpool</b></span>
-				<span class="span4"><b>Terminator</b></span>
+			<div class="boxx2">
+				<span class="spann1 span"><b>Shoplifters</b></span>
+				<span class="spann2 span"><b>Inception</b></span>
+				<span class="spann3 span"><b>Deadpool</b></span>
+				<span class="spann4 span"><b>Terminator</b></span>
 			</div>
 		</div>
 
