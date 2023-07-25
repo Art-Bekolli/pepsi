@@ -297,7 +297,7 @@ function wporg_options_page_html() {
 
                     //mark question as seen
                     d3.select(".slice:nth-child(" + (picked + 1) + ") path")
-                        .attr("opacity", "0.3");
+                        .attr("fill", "black");
 
                     //populate question
                     d3.select("#question h1")
