@@ -173,8 +173,7 @@ function wporg_options_page_html() {
 				<span class="spann2 span"><b>7500</b></span>
 				<span class="spann3 span"><b>Bat Man</b></span>
 				<span class="spann4 span"><b>Joker</b></span>
-			</div>
-			<div class="boxx2">
+
 				<span class="spann1 span"><b>Shoplifters</b></span>
 				<span class="spann2 span"><b>Inception</b></span>
 				<span class="spann3 span"><b>Deadpool</b></span>
